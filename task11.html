@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nested Tables</title>
+</head>
+
+<body>
+
+    <h1 align="center">TASKS FOR NESTED TABLES</h1>
+
+    <hr>
+
+    <!-- TASK 1: EMPLOYEE SALARY SLIP -->
+
+    <h2>Task 1: Employee Salary Slip</h2>
+
+    <table border="2" align="center" cellpadding="10"
+           cellspacing="0" width="700">
+
+        <tr>
+            <th colspan="4" bgcolor="lightblue">
+                EMPLOYEE SALARY SLIP
+            </th>
+        </tr>
+
+        <tr>
+            <td><b>Employee Name</b></td>
+            <td>Rahul Sharma</td>
+            <td><b>Employee ID</b></td>
+            <td>EMP101</td>
+        </tr>
+
+        <tr>
+            <td><b>Department</b></td>
+            <td>IT</td>
+            <td><b>Month</b></td>
+            <td>October 2026</td>
+        </tr>
+
+        <tr>
+            <th colspan="2">Earnings</th>
+            <th colspan="2">Deductions</th>
+        </tr>
+
+        <tr>
+            <td colspan="2" valign="top">
+
+                <table border="1" width="100%" cellpadding="8"
+                       cellspacing="0">
+
+                    <tr>
+                        <th>Salary Component</th>
+                        <th>Amount (₹)</th>
+                    </tr>
+
+                    <tr>
+                        <td>Basic Salary</td>
+                        <td>25,000</td>
+                    </tr>
+
+                    <tr>
+                        <td>HRA</td>
+                        <td>10,000</td>
+                    </tr>
+
+                    <tr>
+                        <td>Allowance</td>
+                        <td>5,000</td>
+                    </tr>
+
+                </table>
+
+            </td>
+
+            <td colspan="2" valign="top">
+
+                <table border="1" width="100%" cellpadding="8"
+                       cellspacing="0">
+
+                    <tr>
+                        <th>Deduction</th>
+                        <th>Amount (₹)</th>
+                    </tr>
+
+                    <tr>
+                        <td>PF</td>
+                        <td>2,000</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tax</td>
+                        <td>1,000</td>
+                    </tr>
+
+                    <tr>
+                        <td>Other</td>
+                        <td>500</td>
+                    </tr>
+
+                </table>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><b>Total Earnings</b></td>
+            <td colspan="2">₹40,000</td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><b>Total Deductions</b></td>
+            <td colspan="2">₹3,500</td>
+        </tr>
+
+        <tr>
+            <th colspan="2">Net Salary</th>
+            <th colspan="2">₹36,500</th>
+        </tr>
+
+    </table>
+
+
+    <br><hr><br>
+
+
+    <!-- TASK 2: STUDENT PROFILE AND MARKS -->
+
+    <h2>Task 2: Student Profile & Marks</h2>
+
+    <table border="2" align="center" width="700"
+           cellpadding="10" cellspacing="0">
+
+        <tr>
+            <th colspan="4" bgcolor="lightgreen">
+                STUDENT PROFILE & MARKS
+            </th>
+        </tr>
+
+        <tr>
+            <td rowspan="3" align="center">
+                <img src="https://via.placeholder.com/100"
+                     alt="Student Photo"
+                     width="100"
+                     height="100">
+                <br>
+                Student Photo
+            </td>
+
+            <td><b>Name</b></td>
+            <td colspan="2">Aman Kumar</td>
+        </tr>
+
+        <tr>
+            <td><b>Roll No.</b></td>
+            <td colspan="2">101</td>
+        </tr>
+
+        <tr>
+            <td><b>Class</b></td>
+            <td colspan="2">BCA</td>
+        </tr>
+
+        <tr>
+            <th colspan="4">Subject-wise Marks</th>
+        </tr>
+
+        <tr>
+            <td colspan="4">
+
+                <table border="1" width="100%"
+                       cellpadding="8" cellspacing="0">
+
+                    <tr>
+                        <th>Subject</th>
+                        <th>Maximum Marks</th>
+                        <th>Obtained Marks</th>
+                        <th>Grade</th>
+                    </tr>
+
+                    <tr>
+                        <td>Computer</td>
+                        <td>100</td>
+                        <td>90</td>
+                        <td>A+</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mathematics</td>
+                        <td>100</td>
+                        <td>85</td>
+                        <td>A</td>
+                    </tr>
+
+                    <tr>
+                        <td>English</td>
+                        <td>100</td>
+                        <td>88</td>
+                        <td>A</td>
+                    </tr>
+
+                    <tr>
+                        <td>Statistics</td>
+                        <td>100</td>
+                        <td>80</td>
+                        <td>A</td>
+                    </tr>
+
+                </table>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><b>Total Marks</b></td>
+            <td colspan="2">343 / 400</td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><b>Percentage</b></td>
+            <td colspan="2">85.75%</td>
+        </tr>
+
+        <tr>
+            <th colspan="4">Result: PASS</th>
+        </tr>
+
+    </table>
+
+
+    <br><hr><br>
+
+
+    <!-- TASK 3: PRODUCT ORDER SUMMARY -->
+
+    <h2>Task 3: Product Order Summary</h2>
+
+    <table border="2" align="center" width="700"
+           cellpadding="10" cellspacing="0">
+
+        <tr>
+            <th colspan="5" bgcolor="lightyellow">
+                PRODUCT ORDER SUMMARY
+            </th>
+        </tr>
+
+        <tr>
+            <td colspan="2"><b>Order ID:</b> ORD101</td>
+            <td colspan="3"><b>Order Date:</b> 21-10-2026</td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><b>Customer:</b> Rohit Verma</td>
+            <td colspan="3"><b>Status:</b> Delivered</td>
+        </tr>
+
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Price (₹)</th>
+            <th>Discount</th>
+            <th>Total (₹)</th>
+        </tr>
+
+        <tr>
+            <td>Laptop</td>
+            <td>1</td>
+            <td>40,000</td>
+            <td>2,000</td>
+            <td>38,000</td>
+        </tr>
+
+        <tr>
+            <td>Mouse</td>
+            <td>2</td>
+            <td>500</td>
+            <td>0</td>
+            <td>1,000</td>
+        </tr>
+
+        <tr>
+            <td>Keyboard</td>
+            <td>1</td>
+            <td>1,500</td>
+            <td>100</td>
+            <td>1,400</td>
+        </tr>
+
+        <tr>
+            <td colspan="3" rowspan="3" valign="top">
+
+                <b>Payment Details</b>
+
+                <table border="1" cellpadding="6"
+                       cellspacing="0" width="100%">
+
+                    <tr>
+                        <td>Payment Method</td>
+                        <td>UPI</td>
+                    </tr>
+
+                    <tr>
+                        <td>Payment Status</td>
+                        <td>Paid</td>
+                    </tr>
+
+                </table>
+
+            </td>
+
+            <td><b>Subtotal</b></td>
+            <td>40,400</td>
+        </tr>
+
+        <tr>
+            <td><b>Shipping</b></td>
+            <td>200</td>
+        </tr>
+
+        <tr>
+            <td><b>Grand Total</b></td>
+            <th>40,600</th>
+        </tr>
+
+    </table>
+
+
+    <br><hr><br>
+
+
+    <!-- TASK 4: HOTEL BOOKING -->
+
+    <h2>Task 4: Hotel Booking</h2>
+
+    <table border="2" align="center" width="700"
+           cellpadding="10" cellspacing="0">
+
+        <tr>
+            <th colspan="4" bgcolor="lightpink">
+                HOTEL BOOKING DETAILS
+            </th>
+        </tr>
+
+        <tr>
+            <td><b>Booking ID</b></td>
+            <td>HTL101</td>
+            <td><b>Booking Date</b></td>
+            <td>21-10-2026</td>
+        </tr>
+
+        <tr>
+            <td><b>Guest Name</b></td>
+            <td colspan="3">Aman Sharma</td>
+        </tr>
+
+        <tr>
+            <td><b>Hotel Name</b></td>
+            <td colspan="3">The Royal Palace Hotel</td>
+        </tr>
+
+        <tr>
+            <td><b>Check-in</b></td>
+            <td>25-10-2026</td>
+            <td><b>Check-out</b></td>
+            <td>28-10-2026</td>
+        </tr>
+
+        <tr>
+            <th colspan="4">Room Details</th>
+        </tr>
+
+        <tr>
+            <td colspan="4">
+
+                <table border="1" width="100%"
+                       cellpadding="8" cellspacing="0">
+
+                    <tr>
+                        <th>Room Type</th>
+                        <th>Rooms</th>
+                        <th>Price per Night</th>
+                        <th>Nights</th>
+                    </tr>
+
+                    <tr>
+                        <td>Deluxe Room</td>
+                        <td>1</td>
+                        <td>₹3,000</td>
+                        <td>3</td>
+                    </tr>
+
+                    <tr>
+                        <td>Extra Bed</td>
+                        <td>1</td>
+                        <td>₹500</td>
+                        <td>3</td>
+                    </tr>
+
+                </table>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td><b>Guests</b></td>
+            <td>2 Adults</td>
+            <td><b>Meal Plan</b></td>
+            <td>Breakfast</td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><b>Room Charges</b></td>
+            <td colspan="2">₹9,000</td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><b>Extra Bed Charges</b></td>
+            <td colspan="2">₹1,500</td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><b>Grand Total</b></td>
+            <th colspan="2">₹10,500</th>
+        </tr>
+
+        <tr>
+            <td><b>Payment Status</b></td>
+            <td>Paid</td>
+            <td><b>Booking Status</b></td>
+            <td>Confirmed</td>
+        </tr>
+
+    </table>
+
+    <br><br>
+
+    <p align="center">
+        <b>© 2026 | Nested Tables HTML Practical</b>
+    </p>
+
+</body>
+</html>

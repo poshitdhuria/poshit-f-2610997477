@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Explore the World - Travel Agency</title>
+</head>
+<body style="margin:0;">
+
+    <!-- Row 1: Header (20%) -->
+    <div style="background:lightgray; text-align:center; height:20vh; border:1px solid gray; box-sizing:border-box;">
+        <h2 style="margin:8px;">EXPLORE THE WORLD</h2>
+        <p style="margin:4px;">Welcome to our Travel Agency!<br>
+        We plan the best trips for you, your family and your friends.</p>
+    </div>
+
+    <!-- Row 2: Main Content (65%) split into 3 columns -->
+    <table width="100%" cellspacing="0" cellpadding="0" style="height:65vh;">
+        <tr>
+
+            <!-- Column 1: Navigation (25%) -->
+            <td width="25%" valign="top" bgcolor="lightgray" style="border:1px solid gray; padding:10px;">
+                <h3>Menu</h3>
+
+                <!-- href + target: opens the page in the named frame -->
+                <p><a href="data:text/html,<h3>Home</h3><p>Welcome to Explore the World. Choose a destination or a package and start your journey!</p>" target="destinations">HOME</a></p>
+
+                <p><a href="data:text/html,<h3>Tourist Destinations</h3><ul><li>MANALI</li><li>GOA</li><li>JAIPUR</li></ul>" target="destinations">DESTINATIONS</a></p>
+
+                <p><a href="data:text/html,<h3>Travel Packages</h3><ul><li>BUDGET</li><li>FAMILY</li><li>ADVENTURE</li></ul>" target="packages">PACKAGES</a></p>
+            </td>
+
+            <!-- Column 2: Tourist Destinations (45%) -->
+            <td width="45%" bgcolor="lightblue" style="border:1px solid gray;">
+                <iframe name="destinations" width="100%" height="100%"
+                        frameborder="0" scrolling="auto" marginwidth="10" marginheight="10"
+                        srcdoc="<h3>Tourist Destinations</h3><ul><li>MANALI</li><li>GOA</li><li>JAIPUR</li></ul>">
+                </iframe>
+            </td>
+
+            <!-- Column 3: Travel Packages (30%) -->
+            <td width="30%" bgcolor="lightblue" style="border:1px solid gray;">
+                <iframe name="packages" width="100%" height="100%"
+                        frameborder="0" scrolling="auto" marginwidth="10" marginheight="10"
+                        srcdoc="<h3>Travel Packages</h3><ul><li>BUDGET</li><li>FAMILY</li><li>ADVENTURE</li></ul>">
+                </iframe>
+            </td>
+
+        </tr>
+    </table>
+
+    <!-- Row 3: Footer (15%) -->
+    <table width="100%" bgcolor="lightgray" style="height:15vh; border:1px solid gray;">
+        <tr align="center">
+            <td>Contact: +91 89686 87156</td>
+            <td>Email: gurkirat.s@chitkara.edu.in</td>
+            <td>&copy; 2026 explore your potential</td>
+        </tr>
+    </table>
+
+</body>
+</html>

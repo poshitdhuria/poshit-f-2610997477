@@ -1,0 +1,146 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Course Registration</title>
+</head>
+
+<body>
+
+    <h1 align="center">Online Course Registration</h1>
+    <h3 align="center">Training Institute</h3>
+
+    <hr>
+
+    <form action="#" target="_self" method="post"
+          enctype="multipart/form-data">
+
+        <!-- Personal Information -->
+        <fieldset>
+            <legend><b>Personal Information</b></legend>
+
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" name="studentName"
+                   placeholder="Enter your full name" required>
+            <br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email"
+                   placeholder="Enter your email" required>
+            <br><br>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile"
+                   placeholder="Enter mobile number"
+                   pattern="[0-9]{10}" maxlength="10" required>
+            <br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age"
+                   min="1" max="100" placeholder="Enter your age">
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"
+                   placeholder="Create a password" required>
+            <br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+            <br><br>
+
+            <b>Gender:</b><br>
+
+            <input type="radio" id="male" name="gender"
+                   value="Male" required>
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender"
+                   value="Female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender"
+                   value="Other">
+            <label for="other">Other</label>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Course Preferences -->
+        <fieldset>
+            <legend><b>Course Preferences</b></legend>
+
+            <label for="course">Select Course:</label>
+
+            <select id="course" name="course" required>
+                <option value="">-- Select a Course --</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Python Programming">Python Programming</option>
+                <option value="Data Analytics">Data Analytics</option>
+                <option value="Digital Marketing">Digital Marketing</option>
+            </select>
+
+            <br><br>
+
+            <b>Skills You Know:</b><br>
+
+            <input type="checkbox" id="html" name="skills"
+                   value="HTML">
+            <label for="html">HTML</label>
+
+            <input type="checkbox" id="css" name="skills"
+                   value="CSS">
+            <label for="css">CSS</label>
+
+            <input type="checkbox" id="javascript" name="skills"
+                   value="JavaScript">
+            <label for="javascript">JavaScript</label>
+
+            <input type="checkbox" id="python" name="skills"
+                   value="Python">
+            <label for="python">Python</label>
+
+            <br><br>
+
+            <label for="classTime">Preferred Class Time:</label>
+            <input type="time" id="classTime" name="classTime">
+
+        </fieldset>
+
+        <br>
+
+        <!-- Additional Information -->
+        <fieldset>
+            <legend><b>Additional Information</b></legend>
+
+            <label for="address">Address / Additional Information:</label>
+            <br>
+
+            <textarea id="address" name="address"
+                      rows="5" cols="40"
+                      placeholder="Enter your address or additional details"></textarea>
+
+            <br><br>
+
+            <label for="document">Upload Document or Photograph:</label>
+            <input type="file" id="document" name="document"
+                   accept="image/*,.pdf">
+
+        </fieldset>
+
+        <!-- Hidden Input -->
+        <input type="hidden" name="formTitle"
+               value="Online Course Registration">
+
+        <br>
+
+        <!-- Submit and Reset -->
+        <input type="submit" value="Submit Registration">
+        <input type="reset" value="Reset Form">
+
+    </form>
+
+</body>
+</html>
+```

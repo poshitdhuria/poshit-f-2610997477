@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Website</title>
+</head>
+<body style="margin:0;">
+
+    <!-- Task 1: Header -->
+    <div style="background:lightblue; text-align:center; padding:10px; height:80px;">
+        <h1 style="margin:5px;">My College</h1>
+        <p style="margin:5px;">A place to learn, grow and build a bright future.</p>
+    </div>
+
+    <!-- Task 2: Two columns (Navigation and Main Content) -->
+    <table width="100%" height="450" cellspacing="0" cellpadding="0">
+        <tr>
+
+            <!-- Navigation column -->
+            <td width="25%" valign="top" bgcolor="lightyellow">
+                <h3>Menu</h3>
+
+                <!-- Task 5: target="content" opens the page in the content frame -->
+                <p><a href="data:text/html,<h1>Home</h1><p>Welcome to our college website.</p>" target="content">Home</a></p>
+
+                <p><a href="data:text/html,<h1>About Us</h1><p>Our college gives quality education. We have good teachers, a library, labs and a friendly campus.</p>" target="content">About Us</a></p>
+
+                <p><a href="data:text/html,<h1>Courses</h1><ul><li>BCA</li><li>BBA</li><li>B.Com</li><li>B.Sc</li><li>BA</li></ul>" target="content">Courses</a></p>
+
+                <p><a href="data:text/html,<h1>Faculty</h1><ul><li>Dr. Sharma - Computer Science</li><li>Prof. Mehta - Commerce</li><li>Prof. Singh - Mathematics</li></ul>" target="content">Faculty</a></p>
+
+                <p><a href="data:text/html,<h1>Contact Us</h1><p>Address: Your College Address<br>Phone: 0000000000<br>Email: info@mycollege.edu</p>" target="content">Contact Us</a></p>
+            </td>
+
+            <!-- Main content column (frame named "content") -->
+            <td width="75%">
+                <iframe name="content" width="100%" height="450" frameborder="0"
+                        srcdoc="<h1>Home</h1><p>Welcome to our college website. Use the menu on the left to explore.</p>">
+                </iframe>
+            </td>
+
+        </tr>
+    </table>
+
+</body>
+</html>
